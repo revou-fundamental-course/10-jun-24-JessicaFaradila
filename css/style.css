@@ -1,0 +1,41 @@
+/* styles.css */
+
+body {
+    margin: 20px; /* Add margin around the body */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 60%; /* Set table width */
+    margin: 0 auto 20px; /* Center align table and add bottom margin */
+    border-collapse: collapse;
+    text-align: center; /* Center align text in table */
+}
+
+input[type="text"] {
+    width: 100%; /* Take full width of its column */
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+button {
+    width: 100%; /* Take full width of its column */
+    height: 40px;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.result-table {
+    width: 40%; /* Set width for result table */
+    margin: 0 auto; /* Center align result table */
+    border: 2px solid #000; /* Black border around result table */
+    border-collapse: collapse; /* Collapse border */
+}
+
+.result-cell {
+    padding: 10px; /* Add padding to result cell */
+    font-size: 18px;
+    text-align: center; /* Center align text in result cell */
+    border: 1px solid #000; /* Border around result cell */
+}
