@@ -1,81 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Suhu</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        table {
-            width: 40%; /* Adjust the table width */
-            margin: 0px 0px; /* Add top and bottom margin */
-            border-collapse: collapse;
-            text-align: left; /* Align table text to the left */
-        }
-        th, td {
-            padding: 2px; /* Adjust cell padding */
-            text-align: left; /* Align table cells to the left */
-        }
-        input[type="text"] {
-            width: 100%; /* Make input field take full width */
-            height: 40px; /* Set input field height */
-            font-size: 16px; /* Increase font size */
-            padding: 5px; /* Add padding inside input field */
-        }
-        button {
-            width: 80%; /* Make buttons take full width of their cell */
-            height: 30px; /* Set button height */
-            font-size: 12px; /* Increase font size */
-            margin: 0px 0; /* Add margin to space out buttons */
-        }
-
-    </style>
-</head>
+<html>
+<title>Fahrenheit to Celsius Temperature Converter</title>
 <body>
-    <h1 style="font-family: Arial, Helvetica, sans-serif;">Kalkulator Suhu</h1>
-    <h5 style="font-family: Arial, Helvetica, sans-serif;">Masukkan suhu derajat Celcius (°C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F)</h5>
-    <h5 style="font-family: Arial, Helvetica, sans-serif;">Celcius (°C)</h5>
-    <table>
-        <tr>
-            <td colspan="6">
-                <input type="text" name="display" placeholder="Masukkan suhu dalam Celcius (°C)">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <button onclick="convertToFahrenheit()">Konversi</button>
-            </td>
-            <td colspan="2">
-                <button onclick="resetInput()">Reset</button>
-            </td>
-            <td colspan="2">
-                <button onclick="reverseConversion()">Reverse</button>
-            </td>
-        </tr>
-    </table>
 
+<h2 style="font-family: Arial, Helvetica, sans-serif;">Kalkulator Suhu</h2>
+<p style="font-family: Arial, Helvetica, sans-serif;">Masukkan suhu derajat Celcius (°C) ke kotak dibawah</p>
+<p style="font-family: Arial, Helvetica, sans-serif;">Klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit(°F)</p>
+<p style="font-family: Arial, Helvetica, sans-serif;">Klik tombol Konversi ke Fahrenheit untuk mendapatkan hasil konversi dalam bentuk Fahrenheit(°F)</p>
 
-    <h5 style="font-family: Arial, Helvetica, sans-serif;">Fahrenheit (°F)</h5>
-    <table>
-        <tr>
-            <th colspan="6">
-                <input type="text" name="display" placeholder="ini hasil bukan input tp ntar aja, cape">
-            </th>
-        </tr>
-    </table> 
+<p>
+  <label style="font-family:Arial, Helvetica, sans-serif ;">Celsius</label>
+  <p></p>
+  <input id="inputCelsius" type="number" placeholder="Celsius">
+</p>
 
-    <h5 style="font-family: Arial, Helvetica, sans-serif;">Cara Kalkulasi</h5>
-    <table>
-        <tr>
-            <th colspan="6">
-                <input type="text" name="display" placeholder="ini ntar aja pusing saya">
-            </th>
-        </tr>
-    </table>    
-    
-    
-    <script src="script.js"></script>
+<p>
+    <button onclick="convertToFahrenheit()">Konversi ke Fahrenheit</button>
+    <button onclick="resetFields()">Reset</button>
+  </p>
+  
 
+<p>
+    <label style="font-family: Arial, Helvetica, sans-serif;">Fahrenheit</label>
+    <p></p>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit">
+  </p>
+
+<p>
+    <button onclick="convertToCelsius()">Konversi ke Celcius</button>
+</p>
+
+<p>
+    <label style="font-family:Arial, Helvetica, sans-serif ;">Cara Kalkulasi</label>
+</p>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
